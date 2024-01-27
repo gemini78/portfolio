@@ -140,7 +140,7 @@ section h2.formation {
     background-attachment: fixed;
 }
 
-img:hover {
+#projects img:hover {
     transform: scale(1.1);
 }
 
@@ -402,6 +402,12 @@ section#contact a.network {
     -webkit-transition: all .5s;
     -o-transition: all .5s;
     transform: scale(0.8);
+}
+
+section#contact img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 a.fb {
