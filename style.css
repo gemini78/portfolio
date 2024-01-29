@@ -593,12 +593,12 @@ a.active {
     flex-wrap: wrap;
 }
 
-#experiences .box-content span.customer {
+#experiences .box-content .customer span {
     margin-bottom: 3px;
     text-transform: lowercase;
 }
 
-#experiences .box-content span.customer::first-letter {
+#experiences .box-content .customer span::first-letter {
     text-transform: uppercase;
 }
 
@@ -755,11 +755,6 @@ a.active {
     justify-content: center;
 }
 
-#services .my-card__face--front h3 {
-    color: #fff;
-    font-size: 32px;
-}
-
 #services .my-card__face--back {
     background-color: var(--light);
     transform: rotateY(180deg);
@@ -787,7 +782,7 @@ a.active {
     right: 0;
     bottom: 0;
     z-index: -1;
-    border-radius: 0 0 50% 0;
+    border-radius: 0 0 30% 0;
     background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%);
 }
 
@@ -930,12 +925,16 @@ footer .box {
         margin: 0;
     }
 
+    #experiences h2 {
+        font-size: 50px;
+    }
+
     #experiences ul li.timeline {
         margin-left: 30px;
     }
 
     #experiences ul li.timeline .box {
-        width: 265px;
+        width: 260px;
     }
 
     #experiences ul li.timeline:nth-child(even) .box {
@@ -946,6 +945,30 @@ footer .box {
         left: -15px;
         border-width: 8px 16px 8px 0px;
         border-color: transparent #f1683a;
+    }
+
+
+    #experiences ul li.timeline.formation:nth-child(odd) .box:before,
+    #experiences ul li.timeline.formation:nth-child(even) .box:before {
+
+        border-width: 8px 16px 8px 0;
+        border-color: transparent var(--tertiary);
+    }
+
+
+
+    #experiences .box-content .customer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #experiences .box-content .date {
+        font-size: 0.8rem;
+        font-weight: bold;
+    }
+
+    #services .my-card {
+        width: 300px;
     }
 
     .youtube-videos {
@@ -966,6 +989,7 @@ footer .box {
         justify-content: center;
         align-items: center
     }
+
 }
 
 @media screen and (min-width:769px) and (max-width: 900px) {
