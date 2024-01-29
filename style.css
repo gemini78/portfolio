@@ -915,12 +915,6 @@ footer .box {
         flex-shrink: inherit;
     }
 
-    #home .thumbnail .item .content {
-        width: 100% !important;
-        left: 0;
-        right: 0;
-    }
-
     .container {
         margin: 0;
     }
