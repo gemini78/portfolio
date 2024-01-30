@@ -132,6 +132,50 @@ section h2.formation {
     -o-transition: all .5s;
 }
 
+.navbar a.navbar-brand,
+.navbar a.navbar-brand:hover {
+    color: var(--primary);
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.navbar a.nav-item {
+    font-size: 1.5rem;
+}
+
+.navbar .nav-item a.nav-link {
+    position: relative;
+}
+
+/* .navbar .nav-item a.nav-link:hover {
+    border-bottom: 2px solid var(--primary);
+}
+ */
+
+.navbar .nav-item a.nav-link::after {
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+
+    content: '';
+    height: 8px;
+    width: 0;
+    background-color: var(--primary);
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    opacity: 0;
+}
+
+.navbar .nav-item a.nav-link:hover::after {
+    opacity: 1;
+    width: 100%;
+}
+
+
+.navbar .navbar-nav {}
+
 .bg-clear {
     background: transparent;
 }
@@ -448,23 +492,21 @@ section#contact .my-img img {
     object-fit: cover;
 }
 
-/* 
-iframe {
-    width: 100%;
-    height: 200px;
-    display: block;
-    margin: 0 auto;
-} */
+section#contact .email {
+    color: black;
+}
+
+section#contact .phone {
+    color: black;
+}
 
 section {
     min-height: 100vh;
 }
 
 a.active {
-    /*  background: red; */
-    background-image: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%);
-    color: white;
-    /* border-color: linear-gradient(to bottom left, var(--primary) 10%, var(--secondary) 115%); */
+    color: var(--primary) !important;
+    text-transform: uppercase;
 }
 
 .nav-item {
@@ -489,10 +531,6 @@ a.active {
     overflow-x: hidden;
 }
 
-/* #experiences ul {
-    padding: 50px 0;
-} */
-
 #experiences ul.internal {
     padding: 0;
 }
@@ -506,7 +544,6 @@ a.active {
     width: 10px;
     margin: 0 auto;
     padding: 8px;
-    /*  background-color: #A46DFF; */
     background-image: linear-gradient(90deg, #F6D1FD 30%, #A46DFF 130%);
 }
 
