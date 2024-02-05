@@ -825,9 +825,9 @@ a.active {
 
 #services .pp {
     display: block;
-    width: 120px;
-    height: 120px;
-    margin: 0 auto 30px;
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 50px;
     border-radius: 50%;
     background-color: #FFF;
     border: 5px solid #FFF;
